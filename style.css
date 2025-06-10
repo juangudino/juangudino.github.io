@@ -110,5 +110,6 @@ img.profile-pic {
 
 /* Homepage-specific layout */
 .centered-home {
-  text-align: center;
+  text-align: center !important;
 }
+
