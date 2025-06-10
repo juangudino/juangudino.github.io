@@ -1,7 +1,84 @@
-# Juan Gudino
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Juan Gudino</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f3f3f3;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #4b2e83; /* UW Purple */
+      padding: 15px 30px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    header a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 10px 15px;
+      font-size: 1.1em;
+    }
+    main {
+      padding: 40px;
+      text-align: center;
+    }
+    .title {
+      font-size: 2.5em;
+      font-weight: bold;
+      color: #1a1a1a;
+    }
+    .subtitle {
+      font-size: 1.2em;
+      color: #5a5a5a;
+      margin-top: 10px;
+    }
+    .description {
+      margin: 30px auto;
+      max-width: 700px;
+      font-size: 1.1em;
+      color: #444;
+    }
+    .profile-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    img.profile-pic {
+      max-width: 250px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#cv">CV</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </header>
 
-PhD student in Health Systems and Population Health at the University of Washington | Storyteller of data, mental health, cancer disparities, and Latino and immigrant health outcomes
+  <main>
+    <div class="title">Juan Gudino</div>
+    <div class="subtitle">PhD Student • Health Systems • Cancer & Mental Health</div>
+    <div class="subtitle">Storyteller of data, mental health, cancer disparities, and Latino/immigrant health outcomes</div>
 
-[About](about.md) • [CV](cv.md) • [Projects](projects.md)
+    <div class="profile-container">
+      <img class="profile-pic" src="images/iowajuan.jpg" alt="Juan Gudino">
+    </div>
 
-Welcome to my personal website. I use data and stories to understand how health systems mitigate or harm——and how we might do better.
+    <div class="description">
+      Welcome to my personal website. I use data and stories to understand how health systems mitigate or harm—and how we might do better.
+    </div>
+  </main>
+</body>
+</html>
