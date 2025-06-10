@@ -107,3 +107,8 @@ img.profile-pic {
   font-size: 1.1em;
   color: #444;
 }
+
+/* Homepage-specific layout */
+.centered-home {
+  text-align: center;
+}
