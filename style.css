@@ -119,3 +119,10 @@ img.profile-pic {
   text-align: center !important;
 }
 
+.streak-description {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #fefae0;
+  opacity: 0.9;
+  font-style: italic;
+}
