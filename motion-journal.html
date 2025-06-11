@@ -31,18 +31,31 @@
 </div>
 </div>
  <script>
-  const startDate = new Date("2025-05-09");
-  const today = new Date();
-  const diffTime = today - startDate;
-  const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+  window.onload = function () {
+    const startDate = new Date("2025-05-09");
+    const today = new Date();
+    const diffTime = today - startDate;
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
 
-  // Update the streak number
-  document.getElementById("streak-days").innerText = diffDays;
+    // Update the streak number
+    document.getElementById("streak-days").innerText = diffDays;
 
-  // Update the progress bar
-  const goal = 50;
-  const progressPercent = Math.min((diffDays / goal) * 100, 100); // Cap at 100%
-  document.getElementById("progress-fill").style.width = progressPercent + "%";
+    // Calculate progress
+    const goal = 50;
+    const progressPercent = Math.min((diffDays / goal) * 100, 100); // Cap at 100%
+
+    // Update the progress bar fill
+    const fillBar = document.getElementById("progress-fill");
+    if (fillBar) {
+      fillBar.style.width = progressPercent + "%";
+    }
+
+    // Update the percent text label
+    const percentLabel = document.getElementById("progress-percent-text");
+    if (percentLabel) {
+      percentLabel.innerText = Math.round(progressPercent) + "%";
+    }
+  };
 </script>
 </body>
 </html>
