@@ -125,7 +125,7 @@ img.profile-pic {
   border-radius: 12px;
   padding: 40px;
   max-width: 700px;
-  margin: 80px auto; /* centers it horizontally and adds vertical space */
+  margin: 80px auto; 
   text-align: center;
   font-family: 'Segoe UI', sans-serif;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
