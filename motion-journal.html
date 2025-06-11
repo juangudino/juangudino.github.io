@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Streak Counter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="streak-container">
+    <h2>🔥 Streak Counter</h2>
+    <p>
+     I've walked or ran 5+ miles for
+      <span id="streak-days">0</span> consecutive days.
+    </p>
+    <p class="streak-description">
+    This digital journal keeps me accountable. It’s a way to track movement, practice with code, and be intentional.
+  </p>
+</div>
+  </div>
+
+  <script>
+    const startDate = new Date("2025-05-09");
+    const today = new Date();
+    const diffTime = today - startDate;
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+    document.getElementById("streak-days").innerText = diffDays;
+  </script>
+</body>
+</html>
