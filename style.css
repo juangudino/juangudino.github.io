@@ -183,3 +183,9 @@ img.profile-pic {
   width: 0%;
   transition: width 1s ease-in-out;
 }
+
+.progress-percent-text {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #444;
+}
