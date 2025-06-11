@@ -122,7 +122,9 @@ img.profile-pic {
 .streak-description {
   margin-top: 10px;
   font-size: 1rem;
-  color: #fefae0;
-  opacity: 0.9;
+  color: #444;
   font-style: italic;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
