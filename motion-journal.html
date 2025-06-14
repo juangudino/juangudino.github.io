@@ -74,13 +74,15 @@
     }
    // Milestone text label
     const milestoneContainer = document.getElementById("milestone-icons");
-    if (milestoneContainer) {
-      if (diffDays >= 25) milestoneContainer.innerHTML += "25 Days 🎉";
-      if (diffDays >= 50) milestoneContainer.innerHTML += "50 Days 💪🏽";
-      if (diffDays >= 100) milestoneContainer.innerHTML += "100 Days 🥇";
-      if (diffDays >= 200) milestoneContainer.innerHTML += "200 Days 🔥";
-      if (diffDays >= 400) milestoneContainer.innerHTML += "400 Days 🏆";
-    }
+   if (milestoneContainer) {
+  milestoneContainer.innerHTML = ''; // Clear existing content first
+  if (diffDays >= 25) milestoneContainer.innerHTML += '<span class="milestone">🎉 25 days in!</span>';
+  if (diffDays >= 50) milestoneContainer.innerHTML += '<span class="milestone">💪🏽 50 days strong!</span>';
+  if (diffDays >= 100) milestoneContainer.innerHTML += '<span class="milestone">🥇 Century streak!</span>';
+  if (diffDays >= 200) milestoneContainer.innerHTML += '<span class="milestone">🔥 200-day blaze!</span>';
+  if (diffDays >= 400) milestoneContainer.innerHTML += '<span class="milestone">🏆 400 days undefeated!</span>';
+}
+
     
   };
 </script>
