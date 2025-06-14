@@ -30,6 +30,10 @@
   </div>
     <p id="progress-percent-text" class="progress-percent-text"></p> 
 </div>
+    <div class="milestone-badges">
+  <p>Milestones Unlocked:</p>
+  <div id="milestone-icons"></div>
+</div>
 </div>
  <script>
   window.onload = function () {
@@ -56,6 +60,16 @@
     if (percentLabel) {
       percentLabel.innerText = Math.round(progressPercent) + "%";
     }
+   // Milestone text label
+    const milestoneContainer = document.getElementById("milestone-icons");
+    if (milestoneContainer) {
+      if (diffDays >= 25) milestoneContainer.innerHTML += "🎉";
+      if (diffDays >= 50) milestoneContainer.innerHTML += " 💪🏽";
+      if (diffDays >= 100) milestoneContainer.innerHTML += " 🥇";
+      if (diffDays >= 200) milestoneContainer.innerHTML += " 🔥";
+      if (diffDays >= 400) milestoneContainer.innerHTML += " 🏆";
+    }
+    
   };
 </script>
 </body>
